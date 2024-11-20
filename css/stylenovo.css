@@ -2,11 +2,24 @@ body{
     background-color: #dab1ff;
 }
 
+main{
+    display: flex;
+    padding-top: 80px;
+}
+
 .header{
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .links{
+    display: inline;
+    margin-left: 480px;
+}
+
+.botoes{
     display: inline;
     margin-left: 480px;
 }
@@ -16,7 +29,7 @@ body{
     text-decoration: none;
     font-weight: bold;
     color: black;
-    padding: 3px; 
+    padding: 3px;
 }
 
 .links a:hover{
@@ -51,17 +64,6 @@ body{
     color: #510a69;
 }
 
-.secao-1{
-    width: 500px;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-.botoes{
-    display: inline;
-    margin-left: 480px;
-}
-
 footer {
     text-align: center;
     font-weight: bold;
@@ -78,6 +80,34 @@ footer {
     margin:50px;
 }
 
+.secao-1 h1{
+    font-weight: bold;
+}
+
+.secao-1 h2{
+    font-weight: lighter;
+    color: #e605d3;
+    margin-top: 10px;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+.linha-divisoria{
+    width: 0.5%;
+    background-color:#05e623;
+    height: 100vh;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .secao-1{
     width: 100%;
     margin-left: 0;
@@ -91,49 +121,16 @@ footer {
     margin-bottom: 100px;
 }
 
-.secao-3{
-    width: 100%;
-
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-.secao-4{
-    width: 500px;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-.secao-1 h1{
-    font-weight: bold;
-}
-
-.secao-1 h2{
-    font-weight: lighter;
-    color: #e605d3;
-}
-
-img{
-    width: 400px;
+.mySlides{
+    width: 300px;
+    border-radius:20px;
     margin: 0 auto;
-}
-.img img{
-    width: 33%;
-    border-radius: 100%;
+
 }
 
-.img-col{
-    width: 20%;
-    border-radius: 100%;
-}
-
-h2{
-    padding: 10px;
-}
-
-h1{
-    text-align: center;
-    padding: 15px;
+.img2{
+    width: 100%;
+    border-radius: 20px;
 }
 
 h3{
@@ -142,18 +139,15 @@ h3{
 }
 
 .campobox{
-    width: 33%;
+    width:33%;
 }
 
 .tabela{
-    padding: 20px;
+    padding:20px;
 }
 
-button{
-    padding: 20px;
-    margin-left: 40px;
-}
-
-.btn btn-info{
-    size: 50px;
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
